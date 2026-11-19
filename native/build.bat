@@ -1,4 +1,4 @@
 @echo off
-REM Requiere: Visual Studio (Build Tools con C++), CMake y JAVA_HOME apuntando a un JDK 21
+if exist build rmdir /s /q build
 cmake -S . -B build -A x64
 cmake --build build --config Release
