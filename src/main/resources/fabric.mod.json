@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "dx12mod",
+	"version": "${version}",
+	"name": "DX12 Mod",
+	"description": "Renderizador DirectX 12 experimental para Minecraft (en vez de OpenGL).",
+	"authors": ["Me!"],
+	"license": "CC0-1.0",
+	"icon": "assets/dx12mod/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": ["dev.dx12mod.Dx12Mod"],
+		"client": ["dev.dx12mod.client.Dx12ModClient"]
+	},
+	"mixins": [
+		{
+			"config": "dx12mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

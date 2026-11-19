@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "dev.dx12mod.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"RenderSystemMixin",
+		"WindowMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
