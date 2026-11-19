@@ -1,0 +1,10 @@
+^C:\USERS\ADMIN\DOWNLOADS\DX12MOD-PASO1\NATIVE\BUILD\CMAKEFILES\1E3581368FCE5DB476A6E20DBD480CF4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Admin/Downloads/dx12mod-paso1/native -BC:/Users/Admin/Downloads/dx12mod-paso1/native/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Admin/Downloads/dx12mod-paso1/native/build/dx12native.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
